@@ -10,6 +10,9 @@ header {
 
 header .container {
     position: relative;
+    @media (max-width: 980px) {
+        position: static;
+    }
 }
 
 .menu-principal {
