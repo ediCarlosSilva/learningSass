@@ -34,8 +34,11 @@
     border: 0;
     padding: .6em;
     font-size: 1.2em;
-    @include borda-arredondada(50px);
+    // @include borda-arredondada(50px);
+    @include border-radius(50px);
     // @include sombra-padrao;
-    @extend %sombra-padrao;
+    // @extend %sombra-padrao;
+    // @include single-box-shadow;
+    @include box-shadow(black 0 2px 6.65px);
     font-weight: bold;
 }

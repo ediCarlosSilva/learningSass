@@ -10,7 +10,9 @@
 
 .plano {
     background: white;
-    width: 18em;
+    // width: 18em;
+    // width: 18 * $tamanho-da-fonte-padrao;
+    @include retorna-largura(18);
     display: inline-block;
     margin: 1em 0 0 1.4em;
     padding-bottom: 2em;
@@ -60,23 +62,25 @@
     width: 210px;
     height: 38px;
     font-size: 1.2em;
-    @include borda-arredondada;
+    // @include borda-arredondada;
+    @include border-radius(0.3em);
     // @include sombra-padrao;
-    @extend %sombra-padrao;
+    // @extend %sombra-padrao;
+    @include box-shadow(black 0 2px 6.65px);
     margin-left: 2em;
 }
 
-.icone-check,
-.icone-x {
-    background: url(../imagens/sprite.png) no-repeat;
+@include all-sprite-sprites;
+.sprite-icone-check,
+.sprite-icone-x {
+    // background: url(../imagens/sprite-s1e035a9ecf.png) no-repeat;
     width: 18px;
     height: 18px;
 }
 
-.icone-check {
-    background-position: -5px -5px;
-}
-
-.icone-x {
-    background-position: -33px -5px;
-}
+// .icone-check {
+//     background-position: 0 0;
+// }
+// .icone-x {
+//     background-position: 0 -24px;
+// }

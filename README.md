@@ -1,1 +1,1 @@
-# learing sass
+# learning sass
